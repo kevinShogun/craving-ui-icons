@@ -3,3 +3,7 @@
 @tailwind components;
 
 @tailwind utilities;
+
+.texto{
+    @apply border-white outline-white ring-white ring-opacity-0 ring-offset-0 ring-offset-white
+}

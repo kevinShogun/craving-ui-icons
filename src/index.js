@@ -1,11 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+import Main from './main';
 
 ReactDOM.render(
   <React.StrictMode>
-    <h1>Hola Mundo</h1>
+    <Main/>
   </React.StrictMode>,
   document.getElementById('root')
 );
