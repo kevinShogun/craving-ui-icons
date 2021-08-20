@@ -1,9 +1,26 @@
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
 
+::-webkit-scrollbar {
+    display: none;
+} /*Oculta el Scroll del overflow-y-auto*/
+
 .texto{
-    @apply border-white outline-white ring-white ring-opacity-0 ring-offset-0 ring-offset-white
+    @apply border-white outline-white ring-white ring-offset-white
+}
+
+.texto:focus{
+    @apply ring-white 
+}
+
+.texto::before{
+    @apply ring-white focus:ring-transparent
+}
+
+.texto::after{
+    @apply ring-white focus:ring-transparent
+}
+*, ::before, ::after{
+    @apply ring-white focus:ring-transparent
 }
